@@ -10,6 +10,14 @@ IMPORTANT: Plan only. Do NOT implement anything. Do NOT create source code files
 2. The plan filename MUST be exactly `IMPLEMENTATION_PLAN.md`. Do NOT prefix with `@`.
 3. Once the plan is created/updated, you MUST run `git add IMPLEMENTATION_PLAN.md` and `git commit -m "Update implementation plan"`.
 
-Do NOT assume functionality is missing; confirm with code search first. Treat `src/lib` as the project's standard library for shared utilities and components. Prefer consolidated, idiomatic implementations there over ad-hoc copies.
+13. Do NOT assume functionality is missing; confirm with code search first. Treat `src/lib` as the project's standard library for shared utilities and components. Prefer consolidated, idiomatic implementations there over ad-hoc copies.
 
-ULTIMATE GOAL: We want to achieve [project-specific goal]. Consider missing elements and plan accordingly. If an element is missing, search first to confirm it doesn't exist, then if needed author the specification at specs/FILENAME.md. If you create a new element then document the plan to implement it in IMPLEMENTATION_PLAN.md.
+14. **CRITICAL: EXTREME STRICT MODE**
+    - You are in PLAN mode.
+    - YOUR ONLY GOAL is to create/update `IMPLEMENTATION_PLAN.md`.
+    - **UNDER NO CIRCUMSTANCES should you create source code, run tests, or implement features.**
+    - If you think, "I should just start implementing this," STOP. YOU ARE FORBIDDEN.
+    - Once you have committed the plan, you MUST STOP immediately. Do not proceed to the next step.
+    - Do not suggest next steps. Just stop.
+
+15. ULTIMATE GOAL: We want to achieve [project-specific goal]. Consider missing elements and plan accordingly. If an element is missing, search first to confirm it doesn't exist, then if needed author the specification at specs/FILENAME.md. If you create a new element then document the plan to implement it in IMPLEMENTATION_PLAN.md.
