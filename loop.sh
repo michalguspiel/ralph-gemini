@@ -60,8 +60,8 @@ while true; do
 
     echo "Running iteration $ITERATION..."
     
-    # We pipe the prompt to the CLI. 
-    cat "$PROMPT_FILE" | gemini $GEMINI_FLAGS 
+    # We pass the prompt as a positional argument to the CLI.
+    gemini $GEMINI_FLAGS "$(cat "$PROMPT_FILE")" 
 
     # Push changes after each iteration
     # Only push if we have a remote configured
