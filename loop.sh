@@ -65,6 +65,7 @@ while true; do
 
     # Push changes after each iteration
     # Only push if we have a remote configured
+    if git remote | grep -q "^origin$"; then
         git push origin "$CURRENT_BRANCH" || {
             echo "Failed to push. Creating remote branch..."
             git push -u origin "$CURRENT_BRANCH"
